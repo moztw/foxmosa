@@ -1,4 +1,4 @@
-<!--#include virtual="/sandstone/meta.shtml" -->
+<!--#include virtual="sandstone/meta.shtml" -->
     <title class="l10n" data-l10n="foxmosa-title">Foxmosa 小莎</title>
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/buttons.css" rel="stylesheet" />
@@ -22,7 +22,7 @@
         <div id="outer-wrapper">
             <div id="wrapper">
                 
-                <!--#include virtual="/sandstone/header.shtml" -->
+                <!--#include virtual="sandstone/header.shtml" -->
                 
                 <hgroup id="main-feature" class="container block">
                     <h1>Foxmosa</h1>
@@ -109,4 +109,4 @@
                         
                 </div>
                 
-<!--#include virtual="/sandstone/footer.shtml" -->
+<!--#include virtual="sandstone/footer.shtml" -->

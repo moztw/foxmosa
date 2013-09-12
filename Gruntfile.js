@@ -35,6 +35,7 @@ module.exports = function(grunt) {
 	grunt.loadNpmTasks('grunt-contrib-connect');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-contrib-copy');
+	grunt.loadNpmTasks('grunt-update-submodules');
 	grunt.registerTask('ssi', 'Flatten SSI includes in your HTML files.', function() {
         
 	var ssi = require( 'ssi' )
@@ -45,5 +46,5 @@ module.exports = function(grunt) {
 	files.compile();
 
 	});
-	grunt.registerTask('default', ['copy', 'ssi', 'connect', 'watch']);
+	grunt.registerTask('default', ['update_submodules', 'copy', 'ssi', 'connect', 'watch']);
 };

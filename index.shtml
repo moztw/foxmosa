@@ -2,7 +2,7 @@
     <title class="l10n" data-l10n="foxmosa-title">Foxmosa 小莎</title>
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/buttons.css" rel="stylesheet" />
-    <link href="http://moztw.org/js/library/fancybox2/jquery.fancybox.css" rel="stylesheet" />
+    <link href="/assets/scripts/fancybox/jquery.fancybox.css" rel="stylesheet" />
     <style>
         #earth {
             height: 200px;
@@ -11,11 +11,10 @@
     <!--[if lte IE 8]>
     <script src="/js/library/html5shiv/html5shiv-printshiv.js"></script>
     <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
-    <script src="http://moztw.org/js/library/fancybox2/jquery.fancybox.js"></script>
+    <script src="/assets/scripts/jquery.min.js"></script>
+    <script src="/assets/scripts/fancybox/jquery.fancybox.js"></script>
     <script src="js/l10n.js"></script>
     <script src="js/picwall.js"></script>
-    <script src="js/FeedEk.js"></script>
     <script src="js/main.js"></script>
 </head>
     <body>

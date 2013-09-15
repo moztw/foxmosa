@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html class="os-windows no-js" lang="zh-TW">
+<html lang="zh-TW">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title class="l10n" data-l10n="foxmosa-title">Foxmosa 小莎</title>
+    <!--#include virtual="assets/partials/basis.shtml" -->
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/buttons.css" rel="stylesheet" />
     <link href="/assets/scripts/fancybox/jquery.fancybox.css" rel="stylesheet" />
@@ -12,8 +13,32 @@
     <script src="js/l10n.js"></script>
     <script src="js/picwall.js"></script>
     <script src="js/main.js"></script>
-    <script data-main="/sandstone/js/main.js" src="/assets/scripts/require.js"></script>
-    <!--#include virtual="assets/partials/basis.shtml" -->
+    <script>
+    $(function(){ // These state change should be done in global CSS! Need improving.
+    var $header = $('#header');
+    var $body = $('body');
+
+    // search form
+    (function search() {
+      var $search = $header.find('.header-search');
+      var $searchBtn = $search.find('.header-search-btn');
+      var $input = $search.find('.header-search-form-input');
+
+      $searchBtn.on('click', function () {
+        $search.toggleClass('show');
+        $input.focus();
+      });
+    })();
+
+    (function () {
+      var $btn = $header.find('.header-menu-btn');
+      $btn.on('click', function () {
+        $body.toggleClass('margin-left');
+        return false;
+      });
+    })();
+    });
+    </script>
 </head>
 <body>
         <div id="outer-wrapper">

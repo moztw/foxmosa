@@ -22,8 +22,8 @@
                 <!--#include virtual="assets/partials/header.shtml" -->
                 
                 <hgroup id="main-feature" class="container block">
-                    <h1>Foxmosa</h1>
-                    <h2 class="l10n" data-l10n="foxmosa-name">狐耳摩莎</h2>
+                    <h1 id="site-title" class="large">Foxmosa</h1>
+                    <h2 id="site-description" class="open-sans-light l10n" data-l10n="foxmosa-name">狐耳摩莎</h2>
                 </hgroup>
                 
                 <div id="content-area">
@@ -31,11 +31,11 @@
                     <section id="foxmosa-info" class="container block row">
                         <h2 class="block-title hide l10n" data-l10n="foxmosa-info-h2">小莎資料</h2>
                         
-                        <canvas id="foxmosa-run" width="680" height="200"></canvas>
-                        
                         <div id="earth">
                             <img src="images/a.svg" alt="Spinning Earth" />
                         </div>
+                        
+                        <div id="foxmosa-run"></div>
                         
                         <ul id="foxmosa-profile" class="left">
                             <li class="l10n" data-l10n="foxmosa-profile-name">暱稱：小莎、莎莎</li>

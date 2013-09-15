@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	grunt.initConfig({
 		watch: {
 			livereload: {
-				files: ['*.shtml'],
+				files: ['*.shtml', 'css/*.css'],
 				tasks: ['copy', 'ssi'],
 				options: {
 					livereload: true

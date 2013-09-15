@@ -158,13 +158,7 @@
 }
 
 #site-title{
-	position: absolute;
-	left: 50%;
-	top: 0;
 	letter-spacing: -3px;
-	margin: 0 0 .15em -250px;
-	padding-left: 3px;
-	width: 500px;
 	text-align: center;
 	-webkit-transition:All .5s ease;
 	-moz-transition:All .5s ease;
@@ -211,12 +205,7 @@
 }
 
 #site-description{
-	position: absolute;
-	left: 50%;
-	bottom: 0;
 	color: #999;
-	width: 500px;
-	margin-left: -250px;
 	text-align: center;
 	-webkit-transition:All 1s ease;
 	-moz-transition:All 1s ease;
@@ -244,21 +233,12 @@
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
 
-#content_area{
+#content-area{
 	position: relative;
 }
 
-#content_area > section header{
+#content-area > section header{
 	display: none;
-}
-
-#foxmosa-run{
-	position: absolute;
-	top: 174px;
-	right: 163px;
-	height: 200px;
-	width: 680px;
-	z-index: 1;
 }
 
 @-webkit-keyframes myfirst{
@@ -283,8 +263,8 @@
 
 #earth{
 	position: absolute;
-	right: 223px;
-	top: 344px;
+	right: 50px;
+	top: 150px;
 	z-index: 0;
 	width: 400px;
 	height: 200px;
@@ -308,6 +288,28 @@
 	animation-timing-function: linear;
 }
 
+#foxmosa-run{
+	position: absolute;
+	top: -10px;
+	right: 40px;
+	height: 192px;
+	width: 340px;
+	z-index: 1;
+	background: url(../images/run.png) 0 0 no-repeat;
+	animation: foxmosa-run 1.5s steps(19) infinite;
+	-webkit-animation: foxmosa-run 1.5s steps(19) infinite;
+}
+
+@keyframes foxmosa-run {  
+    0% {background-position: 0 0 }
+    100% {background-position: 0 -3648px}
+}
+
+@-webkit-keyframes foxmosa-run {  
+    0% {background-position: 0 0 }
+    100% {background-position: 0 -3648px}
+}
+
 #foxmosa-avatar{
 	width: 150px;
 	height: 150px;
@@ -319,7 +321,6 @@
 }
 
 #foxmosa-profile{
-	margin-left: 40px;
 	width: 360px;
 }
 
